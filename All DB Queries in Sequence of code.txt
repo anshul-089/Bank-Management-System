@@ -1,0 +1,21 @@
+1]"select balance from SBIBank where acno=?";
+
+2]"select balance from SBIBank where acno=?";
+
+3]"update SBIBank set balance=balance+? where acno=?";
+
+4]"insert into SBITransaction (Fromacno,Toaccount,payment,ptime) values (?,?,?,?)";
+
+5]"update sbibank set BALANCE=BALANCE+? where ACNO=?";
+
+6]"insert into sbidepwithTransaction (acno,type,amt,dwdate,time) values(?,?,?,?,?)";
+
+7]"update sbibank set BALANCE=BALANCE-? where ACNO=?";
+
+8]"select BALANCE from sbibank where acno=?";
+
+9]"insert into sbidepwithTransaction (acno,type,amt,DWDATE,Time) values(?,?,?,?,?)";
+
+10]"select *from sbitransaction";
+
+11]"select *from sbidepwithTransaction";
