@@ -1,0 +1,25 @@
+SQL> desc sbibank;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ ACNO                                      NOT NULL NUMBER(12)
+ NAME                                               VARCHAR2(15)
+ BALANCE                                            NUMBER(10,2)
+ ACCTYPE                                            VARCHAR2(15)
+
+SQL> desc SBITRANSACTION;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ FROMACNO                                           NUMBER(12)
+ TOACCOUNT                                          NUMBER(12)
+ PAYMENT                                            NUMBER(12,2)
+ PDATE                                              DATE
+ PTIME                                              VARCHAR2(12)
+
+SQL> desc SBIDEPWITHTRANSACTION;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ ACNO                                               NUMBER(12)
+ TYPE                                               VARCHAR2(15)
+ AMT                                                NUMBER(10,2)
+ DWDATE                                             DATE
+ TIME                                               VARCHAR2(15)
